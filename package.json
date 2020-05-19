@@ -1,0 +1,48 @@
+{
+    "name": "my-app",
+    "version": "0.1.0",
+    "private": true,
+    "jest": {
+        "verbose": true
+    },
+    "dependencies": {
+        "@emotion/core": "^10.0.28",
+        "@emotion/styled": "^10.0.27",
+        "date-fns": "^2.14.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    },
+    "scripts": {
+        "test": "jest",
+        "prettier": "prettier --config ./.prettierrc --write **.js ",
+        "storybook": "start-storybook -p 9009 -s public",
+        "build-storybook": "build-storybook -s public",
+        "deploy-storybook": "storybook-to-ghpages"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@babel/core": "^7.9.6",
+        "@babel/preset-env": "^7.9.6",
+        "@storybook/react": "^5.3.18",
+        "@storybook/storybook-deployer": "^2.8.6",
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.3.2",
+        "@testing-library/react-hooks": "^3.2.1",
+        "@testing-library/user-event": "^7.1.2",
+        "babel-jest": "^26.0.1",
+        "babel-loader": "^8.1.0",
+        "jest": "^26.0.1",
+        "react-test-renderer": "^16.13.1"
+    }
+}
